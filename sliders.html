@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("img1.jpg");
+            background-repeat: no-repeat;
+            background-size: 80%;
+           animation: marry 4s linear infinite;
+            /* animation-name: marry;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+             animation-direction:linear;  
+            /* animation-fill-mode: alternate; */
+            animation-direction:linear; 
+        }
+
+        .container {
+            /* transition: all 2s; */
+            /* animation-name: marry;
+    animation-duration: 2s; */
+        }
+
+        @keyframes marry {
+            0% {
+                background-image: url("img2.jpg");
+                /* transform: scale(2,2); */
+                /* height: 200px; */
+               
+        
+            }
+            25% {
+                background-image: url("img3.jpg");
+                transition: transform 1s;
+                transform:scale(2,2);
+
+            }
+            75% {
+                background-image: url("img4.jpg");
+                /* transform:scale(2,2); */
+
+            } 
+        } 
+.container:hover{
+    /* transition: transform 1s;
+    transform: scale(2);
+     */
+    /* transform: rotate(1080deg); */
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <img  src="img1.jpg"> -->
+    </div>
+</body>
+
+</html>
